@@ -1,12 +1,8 @@
-# 🐦 Twitter Clone — Full-Stack Java App with DevOps, AWS & CI/CD 🚀
+🌩️ Full-Stack DevOps AWS Infrastructure 🚀
+Welcome to the Terraform-Powered AWS & DevOps Automation Suite — an end-to-end, enterprise-grade solution for launching secure, production-ready infrastructure on AWS. This project orchestrates Terraform, AWS EC2, EKS (Kubernetes), Jenkins, Nexus, SonarQube, and more — with just a few commands.
 
-Welcome to the **Twitter Clone Project**, a production-ready, full-stack Java application deployed using modern DevOps practices and cloud infrastructure on AWS.
+🔥 From Infrastructure to CI/CD to Monitoring — All in One Repo!
 
-This project combines a powerful Spring Boot backend with complete CI/CD pipelines, containerization, infrastructure as code, and Kubernetes orchestration — all wrapped into a professional cloud-ready deployment stack.
-
-🔗 **Live Demo** (optional): _Deploy on your AWS using Terraform + Jenkins + EKS_
-
----
 
 ## ✨ Features
 
@@ -30,9 +26,9 @@ This project combines a powerful Spring Boot backend with complete CI/CD pipelin
 
 ## 🧱 Tech Stack
 
-| Layer              | Tools / Tech                           |
-|-------------------|----------------------------------------|
-| 👨‍💻 Backend         | Java, Spring Boot, Maven               |
+| Layer              | Tools / Tech                            |
+|-------------------|------------------------------------------|
+| 👨‍💻 Backend         | Java, Spring Boot, Maven                |
 | 📦 Build & CI/CD    | Jenkins, Docker, Nexus, SonarQube      |
 | ☁️ Infrastructure   | AWS EC2, EKS, Terraform                |
 | 🔒 Security         | Spring Security, TLS, RBAC             |
@@ -94,7 +90,7 @@ twitter_clone/
 
 ## 🧪 Run Locally (Dev Environment)
 
-```bash
+
 # Clone the repo
 git clone https://github.com/<your-username>/twitter_clone.git
 cd twitter_clone
@@ -148,5 +144,6 @@ For reuse or commercial use, please contact the author.
 # Build and run Spring Boot app
 ./mvnw clean install
 ./mvnw spring-boot:run
+
 
 
