@@ -1,32 +1,39 @@
-# twitter_clone-project
+#Twitter_clone-project
+# 🌩️ Full-Stack DevOps AWS Infrastructure 🚀
 
-# 🚀 Terraform-AWS Deployment Project
+Welcome to the **Terraform-Powered AWS & DevOps Automation Suite** — an end-to-end, enterprise-grade solution for launching secure, production-ready infrastructure on AWS. This project orchestrates **Terraform, AWS EC2, EKS (Kubernetes), Jenkins, Nexus, SonarQube**, and more — with just a few commands.
 
-Welcome to the **Terraform AWS Instances Deployment Project** — a powerful, cloud-native, DevOps-integrated infrastructure blueprint built for **speed, scalability, and security**. This project brings together **Terraform, AWS, Docker, Maven, Jenkins**, and **Kubernetes** to provision and manage production-ready environments in style.
-
----
-
-## 🧰 Project Highlights
-
-- ⚙️ **Terraform AWS Instances**  
-  Automates provisioning of secure and scalable EC2 instances using Terraform modules.
-
-- 🧪 **CI/CD Ready**  
-  Built-in **Jenkins Pipeline** scripts and **Maven configuration** to streamline development to deployment.
-
-- 📦 **Dockerized Microservices**  
-  Dockerfile included to containerize your Java apps for easy deployment.
-
-- ☸️ **Kubernetes Native**  
-  Comes with pre-written manifests for:
-  - Deployments
-  - Ingress
-  - Secrets & Cert Authentication
-
-- 🔒 **Secrets Management**  
-  Sensitive config separated in `secret.txt` (excluded from Git tracking with `.gitignore`).
+> **🔥 From Infrastructure to CI/CD to Monitoring — All in One Repo!**
 
 ---
 
-## 🗂️ Project Structure
+## ✨ Key Features
+
+🔧 **Terraform IaC**  
+Provision AWS EC2 instances, EKS clusters, IAM roles, and networking with reusable Terraform modules.
+
+🧱 **EKS Kubernetes Cluster**  
+Includes Kubernetes resource manifests (`role.yml`, `bind_role.yml`, `service_account.yml`, `token.yml`) for secure access control and workload deployment.
+
+📦 **CI/CD Automation**  
+Shell scripts to bootstrap **Jenkins**, **Nexus**, and **SonarQube** — your full DevOps pipeline in minutes:
+- `jenkins.sh`
+- `nexus.sh`
+- `sonarqube.sh`
+
+🐳 **Docker + Kubernetes**  
+Containerize Java apps and deploy with provided `Dockerfile`, K8s YAMLs, and ingress configuration.
+
+🔐 **Secrets & Config Management**  
+Includes `secret.txt`, `.gitignore`, and `.gitattributes` for secure version control and Git LFS integration.
+
+📁 **Project includes:**
+- ✅ Terraform state tracking
+- ✅ Terraform variable & output management
+- ✅ GitHub Git LFS setup for `.jar` artifacts
+- ✅ Pre-downloaded `kubectl` for portability
+
+---
+
+## 🗂️ Folder & File Structure
 
