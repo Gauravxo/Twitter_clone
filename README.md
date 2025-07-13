@@ -1,39 +1,106 @@
-#Twitter_clone-project
-# 🌩️ Full-Stack DevOps AWS Infrastructure 🚀
+# 🐦 Twitter Clone — Full-Stack Java App with DevOps, AWS & CI/CD 🚀
 
-Welcome to the **Terraform-Powered AWS & DevOps Automation Suite** — an end-to-end, enterprise-grade solution for launching secure, production-ready infrastructure on AWS. This project orchestrates **Terraform, AWS EC2, EKS (Kubernetes), Jenkins, Nexus, SonarQube**, and more — with just a few commands.
+Welcome to the **Twitter Clone Project**, a production-ready, full-stack Java application deployed using modern DevOps practices and cloud infrastructure on AWS.
 
-> **🔥 From Infrastructure to CI/CD to Monitoring — All in One Repo!**
+This project combines a powerful Spring Boot backend with complete CI/CD pipelines, containerization, infrastructure as code, and Kubernetes orchestration — all wrapped into a professional cloud-ready deployment stack.
 
----
-
-## ✨ Key Features
-
-🔧 **Terraform IaC**  
-Provision AWS EC2 instances, EKS clusters, IAM roles, and networking with reusable Terraform modules.
-
-🧱 **EKS Kubernetes Cluster**  
-Includes Kubernetes resource manifests (`role.yml`, `bind_role.yml`, `service_account.yml`, `token.yml`) for secure access control and workload deployment.
-
-📦 **CI/CD Automation**  
-Shell scripts to bootstrap **Jenkins**, **Nexus**, and **SonarQube** — your full DevOps pipeline in minutes:
-- `jenkins.sh`
-- `nexus.sh`
-- `sonarqube.sh`
-
-🐳 **Docker + Kubernetes**  
-Containerize Java apps and deploy with provided `Dockerfile`, K8s YAMLs, and ingress configuration.
-
-🔐 **Secrets & Config Management**  
-Includes `secret.txt`, `.gitignore`, and `.gitattributes` for secure version control and Git LFS integration.
-
-📁 **Project includes:**
-- ✅ Terraform state tracking
-- ✅ Terraform variable & output management
-- ✅ GitHub Git LFS setup for `.jar` artifacts
-- ✅ Pre-downloaded `kubectl` for portability
+🔗 **Live Demo** (optional): _Deploy on your AWS using Terraform + Jenkins + EKS_
 
 ---
 
-## 🗂️ Folder & File Structure
+## ✨ Features
+
+### 🎯 Application Highlights
+- 🔐 User Authentication & Authorization (Spring Security)
+- 📝 Create, read, and manage tweets
+- 🗂️ REST APIs with MVC architecture
+- 📦 Maven-based build system
+- 🖼️ Fully functional frontend with HTML templates
+
+### ⚙️ DevOps & Cloud
+- 🌍 AWS provisioning with **Terraform**
+- ☸️ Kubernetes cluster on **EKS**
+- 🐳 Dockerized services
+- 🔁 Jenkins CI/CD pipeline
+- 📊 SonarQube for code analysis
+- 🎯 Nexus for artifact storage
+- 🌐 Ingress with TLS (HTTPS-ready)
+
+---
+
+## 🧱 Tech Stack
+
+| Layer              | Tools / Tech                           |
+|-------------------|----------------------------------------|
+| 👨‍💻 Backend         | Java, Spring Boot, Maven               |
+| 📦 Build & CI/CD    | Jenkins, Docker, Nexus, SonarQube      |
+| ☁️ Infrastructure   | AWS EC2, EKS, Terraform                |
+| 🔒 Security         | Spring Security, TLS, RBAC             |
+| 📊 Testing & Reports| JUnit, Jacoco, Surefire                |
+
+---
+
+## 🗂️ Directory Structure
+twitter_clone/
+├── aws_instances/ → Infrastructure provisioning with Terraform
+│ ├── awsinstance.tf
+│ ├── terraform.tfstate*
+│ ├── jenkins.sh, nexus.sh, sonarqube.sh
+│ └── EKS_CLUSTER/ → Kubernetes cluster & service account
+│ ├── main.tf, variables.tf, role.yml, etc.
+├── src/
+│ ├── main/
+│ │ ├── java/com/example/twitterapp/
+│ │ │ ├── config/ → Spring Security config
+│ │ │ ├── controller/ → User & post APIs
+│ │ │ ├── model/ → Post & User entities
+│ │ │ ├── repository/ → Spring Data JPA
+│ │ │ └── service/ → Business logic layer
+│ │ └── resources/
+│ │ ├── application.properties
+│ │ ├── static/images/ → Background image
+│ │ └── templates/ → HTML pages (add, home, login, register)
+│ └── test/
+│ └── java/...Tests.java
+├── target/ → Compiled classes, test reports, jacoco, .jar
+│ ├── site/jacoco/ → Test coverage reports
+│ ├── surefire-reports/ → JUnit test results
+│ └── twitter-app-5.1.1.jar
+├── Dockerfile
+├── pom.xml
+├── cert-auth.yml → Kubernetes TLS certificate secret
+├── deployment-service.yml → Kubernetes Deployment & Service
+├── ingress_resource.yml → Ingress controller for routing
+├── terraform.tfstate → Infrastructure state tracking
+├── jenkins_pipeline.txt, maven_config.txt
+├── mvnw, mvnw.cmd → Maven wrapper
+└── README.md
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+
+- Java 17+
+- Maven
+- Docker
+- AWS CLI + IAM access
+- Terraform
+- kubectl
+- Jenkins, SonarQube & Nexus (or install via provided shell scripts)
+
+---
+
+## 🧪 Run Locally (Dev Environment)
+
+```bash
+# Clone the repo
+git clone https://github.com/<your-username>/twitter_clone.git
+cd twitter_clone
+
+# Build and run Spring Boot app
+./mvnw clean install
+./mvnw spring-boot:run
+
 
