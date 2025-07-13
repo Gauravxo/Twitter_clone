@@ -99,6 +99,52 @@ twitter_clone/
 git clone https://github.com/<your-username>/twitter_clone.git
 cd twitter_clone
 
+🧪 Testing & Code Quality
+Run tests: ./mvnw test
+
+Coverage report: target/site/jacoco/index.html
+
+SonarQube analysis integrated with Jenkins pipeline
+
+📊 CI/CD Workflow (via Jenkins)
+🔍 Run SonarQube for code quality check
+
+🧪 Run test cases and generate coverage report
+
+⚙️ Build .jar with Maven
+
+🐳 Create Docker image and push to registry
+
+☸️ Deploy to Kubernetes via kubectl
+
+🔒 Security
+Enforced RBAC with Kubernetes Service Accounts
+
+HTTPS via Ingress TLS (cert-auth.yml)
+
+Spring Security for login/auth
+
+Secrets excluded via .gitignore
+
+📬 Contact
+For feedback, suggestions, or collaboration:
+
+📧 Gaurav
+🔗 github.com/Gauravxo
+
+⭐ Show Your Support
+If you liked this project:
+
+Give it a ⭐ on GitHub
+
+Share it with others
+
+Fork it and build your own version!
+
+📝 License
+This project is for learning and demonstration purposes only.
+For reuse or commercial use, please contact the author.
+
 # Build and run Spring Boot app
 ./mvnw clean install
 ./mvnw spring-boot:run
