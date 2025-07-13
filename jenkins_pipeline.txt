@@ -1,0 +1,102 @@
+pipeline {
+    agent any
+
+    tools {
+        jdk 'jdk17'
+        maven 'maven'
+    }
+
+    environment {
+        SCANNER_HOME = tool 'sonar-scanner'  
+    }
+
+    stages {
+
+        stage('Git Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Gauravxo/twitter_clone.git'
+            }
+        }
+
+        stage('Compile') {
+            steps {
+                sh "mvn compile"
+            }
+        }
+
+        stage('Trivy File System Scan') {
+            steps {
+                sh "trivy fs --format table -o fs.html ."
+            }
+        }
+
+        stage('SonarQube Analysis') {
+            steps {
+                withSonarQubeEnv('sonar-scanner') {
+                    sh """
+                        ${SCANNER_HOME}/bin/sonar-scanner \
+                        -Dsonar.projectKey=terraform-project \
+                        -Dsonar.projectName=terraform-project \
+                        -Dsonar.java.binaries=target
+                    """
+                }
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'mvn package'
+            }
+        }
+
+        stage('Publish Artifacts') {
+            steps {
+                withMaven(globalMavenSettingsConfig: 'maven') {
+                    sh "mvn deploy"
+                }
+            }
+        }
+
+        stage('Docker Build & Tag') {
+            steps {
+                script {
+                    withDockerRegistry(credentialsId: 'dockerhub-cred', toolName: 'docker') {
+                        sh "docker build -t gauravxo/twitter_clone:latest ."
+                    }
+                }
+            }
+        }
+
+        stage('Trivy Image Scan') {
+            steps {
+                sh "trivy image --format table -o image.html gauravxo/twitter_clone:latest"
+            }
+        }
+
+        stage('Docker Push') {
+            steps {
+                script {
+                    withDockerRegistry(credentialsId: 'dockerhub-cred', toolName: 'docker') {
+                        sh "docker push gauravxo/twitter_clone:latest"
+                    }
+                }
+            }
+        }
+        stage('kubernetes-deployment') {
+            steps {
+                withKubeConfig(help with pipeline_syntax) {
+                sh "kubectl apply -f deployment-service.yml"    
+             }
+          }
+       }
+       stage('kubernetes pod,svc') {
+            steps {
+                withKubeConfig(help with pipeline syntax) {
+                sh "kubectl get pod"
+                sh "kubectl get svc"
+                }
+            }
+       }
+    }
+}
+

@@ -4,7 +4,10 @@
 *.tfstate.*
 *.terraform.lock.hcl
 *.terraform.tfstate.lock.info
-#target
+target
+kubectl
+kubectl.sha256
+
 # Local variable files (often contain secrets)
 terraform.tfvars
 terraform.tfvars.json
