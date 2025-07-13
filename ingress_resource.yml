@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: twitter-clone-ingress
+  namespace: supernova
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts:
+    - app.gauravxo.twitter.com
+    secretName: twitter-clone-tls
+  rules:
+  - host: app.gauravxo.twitter.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: terraform-project-ssvc
+            port:
+              number: 80
+

@@ -1,0 +1,33 @@
+# Terraform files and directories
+.terraform/
+*.tfstate
+*.tfstate.*
+*.terraform.lock.hcl
+*.terraform.tfstate.lock.info
+#target
+# Local variable files (often contain secrets)
+terraform.tfvars
+terraform.tfvars.json
+terraform.auto.tfvars
+
+# SSH keys (NEVER commit these)
+id_rsa
+id_rsa.pub
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Shell scripts (optionally review before ignoring)
+# Uncomment if you want to ignore all shell scripts
+# *.sh
+
+# IDE/editor config
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
