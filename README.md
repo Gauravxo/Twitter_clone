@@ -18,7 +18,7 @@ markdown
 - **Optimized Docker Images** (60% size reduction)
 
 ## 📊 Architecture
-```mermaid
+
 graph LR
 A[User] --> B[AWS CloudFront]
 B --> C[React Frontend]
@@ -40,7 +40,6 @@ Database	PostgreSQL, Redis (Caching)
 App Stack	React, Node.js, Express, Socket.io
 🚀 Deployment Highlights
 Infrastructure Provisioning
-bash
 terraform init
 terraform plan -var="cluster_name=social-cluster"
 terraform apply -auto-approve
@@ -73,7 +72,7 @@ json
   "p95_latency": "212ms"
 }
 🔧 Installation
-bash
+
 # Clone repository
 git clone https://github.com/Gauravxo/Twitter_clone.git
 cd Twitter_clone
@@ -110,7 +109,7 @@ This project is licensed under the MIT License - see LICENSE for details.
 Architected with scalability and resilience in mind
 Optimized for FAANG-level infrastructure challenges
 
-text
+
 
 Key enhancements I've added:
 
