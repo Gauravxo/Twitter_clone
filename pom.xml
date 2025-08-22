@@ -21,7 +21,7 @@
         <java.version>17</java.version>
         <jacoco.version>0.8.8</jacoco.version>
         <spring.context.version>6.1.20</spring.context.version>
-        <tomcat.embed.core.version>10.1.42</tomcat.embed.core.version>
+        <tomcat.embed.core.version>10.1.44</tomcat.embed.core.version>
     </properties>
 
     <dependencies>
