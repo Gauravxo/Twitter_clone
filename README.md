@@ -1,15 +1,5 @@
-🚀✨ Cloud-Native Social Media Platform on AWS ☁️🐦
-<div align="center">
-
-
-
-
-
-
-
-
-
-
+                                                                         🚀✨ Cloud-Native Social Media Platform on AWS ☁️🐦
+                                                                                  <div align="center">
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=00C2FF&center=true&vCenter=true&width=1000&lines=🚀+Production-Ready+Cloud-Native+Platform;☁️+AWS+EKS+%7C+Terraform+%7C+Kubernetes;⚡+FAANG-Level+DevOps+Architecture;📈+Scalable+%7C+Resilient+%7C+High+Performance" alt="Typing SVG" /> </div>
 🌟 Overview
 
@@ -17,64 +7,64 @@ A Twitter-inspired Social Media Platform engineered using modern DevOps principl
 
 This project demonstrates how scalable applications are deployed in real-world production environments using:
 
-✨ Kubernetes
-✨ Terraform Infrastructure as Code
-✨ Jenkins CI/CD Automation
-✨ AWS EKS Orchestration
-✨ Prometheus + Grafana Monitoring
+✨ Kubernetes,
+✨ Terraform Infrastructure as Code,
+✨ Jenkins CI/CD Automation,
+✨ AWS EKS Orchestration,
+✨ Prometheus + Grafana Monitoring,
 ✨ Docker Container Optimization
 
 🎯 Project Goals
 
-✅ High Availability Infrastructure
-✅ Zero-Downtime Deployments
-✅ Auto-Scaling Kubernetes Workloads
-✅ Infrastructure Automation
-✅ Real-Time Monitoring & Alerting
-✅ Performance Optimization
+✅ High Availability Infrastructure,
+✅ Zero-Downtime Deployments,
+✅ Auto-Scaling Kubernetes Workloads,
+✅ Infrastructure Automation,
+✅ Real-Time Monitoring & Alerting,
+✅ Performance Optimization,
 ✅ Production-Ready CI/CD Pipelines
 
 🏗️ Cloud Architecture
 ⚡ Key Features
-☁️ Cloud & Infrastructure
-🚀 AWS EKS Managed Kubernetes Cluster
-🔐 IAM Role-Based Secure Access
-🌐 VPC with Public & Private Subnets
-📦 Modular Terraform Architecture
-⚖️ Horizontal Pod Autoscaling (HPA)
-🔁 Rolling & Blue/Green Deployments
-🐳 Containerization
-🐋 Dockerized Frontend & Backend
-📉 Reduced Docker Image Size by 60%
-⚡ Faster Container Startup Times
-🔒 Secure Multi-Stage Docker Builds
-🔧 CI/CD Automation
-🔄 Jenkins Automated Pipelines
-🚀 Zero-Downtime Blue/Green Releases
-✅ Automated Build & Deployment
-🔍 Continuous Integration Checks
-📦 GitHub Actions Support
-📈 Monitoring & Observability
-📊 Prometheus Metrics Collection
-📉 Grafana Real-Time Dashboards
-🚨 Alertmanager Notifications
-🧠 Kubernetes Health Monitoring
-📡 Real-Time Cluster Insights
+☁️ Cloud & Infrastructure,
+🚀 AWS EKS Managed Kubernetes Cluster,
+🔐 IAM Role-Based Secure Access,
+🌐 VPC with Public & Private Subnets,
+📦 Modular Terraform Architecture,
+⚖️ Horizontal Pod Autoscaling (HPA),
+🔁 Rolling & Blue/Green Deployments,
+🐳 Containerization,
+🐋 Dockerized Frontend & Backend,
+📉 Reduced Docker Image Size by 60%,
+⚡ Faster Container Startup Times,
+🔒 Secure Multi-Stage Docker Builds,
+🔧 CI/CD Automation,
+🔄 Jenkins Automated Pipelines,
+🚀 Zero-Downtime Blue/Green Releases,
+✅ Automated Build & Deployment,
+🔍 Continuous Integration Checks,
+📦 GitHub Actions Support,
+📈 Monitoring & Observability,
+📊 Prometheus Metrics Collection,
+📉 Grafana Real-Time Dashboards,
+🚨 Alertmanager Notifications,
+🧠 Kubernetes Health Monitoring,
+📡 Real-Time Cluster Insights,
 🧰 Tech Stack
 <div align="center">
 🚀 Category	🛠️ Technologies
-☁️ Cloud	AWS (EKS, EC2, S3, IAM, VPC)
-🐳 Containers	Docker, Kubernetes, HPA
-🏗️ IaC	Terraform, AWS Provider
-🔄 CI/CD	Jenkins, GitHub Actions
-📈 Monitoring	Prometheus, Grafana, Alertmanager
-🗄️ Database	PostgreSQL, Redis
-⚛️ Frontend	React.js
-🟢 Backend	Node.js, Express.js
-⚡ Real-Time	Socket.io
+☁️ Cloud	AWS (EKS, EC2, S3, IAM, VPC),
+🐳 Containers	Docker, Kubernetes, HPA,
+🏗️ IaC	Terraform, AWS Provider,
+🔄 CI/CD	Jenkins, GitHub Actions,
+📈 Monitoring	Prometheus, Grafana, Alertmanager,
+🗄️ Database	PostgreSQL, Redis,
+⚛️ Frontend	React.js,
+🟢 Backend	Node.js, Express.js,
+⚡ Real-Time	Socket.io,
 </div>
 🚀 Deployment Workflow
-1️⃣ Clone Repository
+1️⃣ Clone Repository,
 git clone https://github.com/Gauravxo/Twitter_clone.git
 cd Twitter_clone
 2️⃣ Infrastructure Provisioning
